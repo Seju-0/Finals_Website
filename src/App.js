@@ -8,6 +8,7 @@ import Register from './components/Register';
 import Beverages from './components/Beverages';
 import Pastries from './components/Pastries';
 import Merchandise from './components/Merchandise';
+import Login from './Login';  // Import your Login component
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/beverages" element={<Beverages />} />
           <Route path="/pastries" element={<Pastries />} />
           <Route path="/merchandise" element={<Merchandise />} />
+          <Route path="/login" element={<Login />} /> {/* Add the Login route */}
         </Routes>
       </div>
     </Router>
@@ -27,3 +29,4 @@ function App() {
 }
 
 export default App;
+
