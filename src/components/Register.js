@@ -30,7 +30,7 @@ const Register = () => {
 
         {/* Sign Up Section */}
         <div className="sign-up-section">
-          <GiCoffeeBeans size={50} style={{ marginBottom: '20px' }} /> {/* Coffee Beans icon */}
+          <GiCoffeeBeans size={50} style={{ marginBottom: '-35px' }} /> {/* Coffee Beans icon */}
           <h2>Hello, Friend!</h2>
           <p>Register with your personal details to use all of site features</p>
           <button className="sign-up-btn">Sign Up</button>

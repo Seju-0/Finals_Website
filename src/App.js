@@ -1,6 +1,5 @@
 import React from 'react';
 import './css_files/App.css';  // Global styles
-import './css_files/styles.css';  // Additional styles
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CustomNavbar from './components/Navbar'; 
 import Home from './components/Home';
