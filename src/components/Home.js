@@ -12,21 +12,21 @@ const locations = [
   },
 
   { 
-    name: 'Main Store', 
+    name: 'Sub Branch', 
     address: 'Baguio', 
     description: '+63 (0)74', 
     backgroundImage: 'https://i.pinimg.com/564x/4d/9a/fd/4d9afd1ad833ed52e7fbe83b5fe51a11.jpg' // Path to the background image
   },
 
   { 
-    name: 'Main Store', 
+    name: 'Sub Branch', 
     address: 'Quezon', 
     description: '+63 (0)42', 
     backgroundImage: 'https://i.pinimg.com/564x/e7/20/cc/e720cca11bc8c8d526b96cb43a46dffe.jpg' // Path to the background image
   },
 
   { 
-    name: 'Main Store', 
+    name: 'Sub Branch', 
     address: 'Makati', 
     description: '+63 (0)02', 
     backgroundImage: 'https://i.pinimg.com/564x/8c/90/d3/8c90d39f68265d441f594b7200248deb.jpg' // Path to the background image
