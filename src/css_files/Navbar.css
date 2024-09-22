@@ -6,7 +6,7 @@ a {
   width: 100%; /* Ensure navbar takes full width */
   padding: 1rem 0; /* Add vertical padding to increase height */
   text-align: center;
-  margin-top: 20px; /* Adjust this value to lower the navbar */
+  margin-top: 60px; /* Adjust this value to lower the navbar */
 }
 
 .navbar .nav {
