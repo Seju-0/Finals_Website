@@ -1,37 +1,38 @@
+// Home.jsx
 import React from 'react';
 import '../css_files/Home.css'; // Adjusted path
 import LocationCard from './LocationCard'; // Corrected import
 
-const locations = [
+import mainStoreImage from '../Images/Manila.jpg';
+import subBranchBaguioImage from '../Images/Baguio.jpg';
+import subBranchQuezonImage from '../Images/Quezon.jpg';
+import subBranchMakatiImage from '../Images/Makati.jpg';
 
+const locations = [
   { 
     name: 'Main Store', 
     address: 'Manila', 
-    description: '8123-4567', 
-    backgroundImage: 'https://i.pinimg.com/564x/ce/21/b4/ce21b432b241659ab1febe4902bee382.jpg' // Path to the background image
+    description: 'Manila, capital and chief city of the Philippines. The city is the centre of the country’s economic, political, social, and cultural activity.', 
+    backgroundImage: mainStoreImage
   },
-
   { 
     name: 'Sub Branch', 
     address: 'Baguio', 
-    description: '+63 (0)74', 
-    backgroundImage: 'https://i.pinimg.com/564x/4d/9a/fd/4d9afd1ad833ed52e7fbe83b5fe51a11.jpg' // Path to the background image
+    description: 'Baguio City is a landlocked, highly urbanized city located in the island of Luzon and within the highlands of the Cordillera Ranges.', 
+    backgroundImage: subBranchBaguioImage
   },
-
   { 
     name: 'Sub Branch', 
     address: 'Quezon', 
-    description: '+63 (0)42', 
-    backgroundImage: 'https://i.pinimg.com/564x/e7/20/cc/e720cca11bc8c8d526b96cb43a46dffe.jpg' // Path to the background image
+    description: 'Quezon City is known for its culture, entertainment industry and media, and is aptly called the "City of Stars".', 
+    backgroundImage: subBranchQuezonImage
   },
-
   { 
     name: 'Sub Branch', 
     address: 'Makati', 
-    description: '+63 (0)02', 
-    backgroundImage: 'https://i.pinimg.com/564x/8c/90/d3/8c90d39f68265d441f594b7200248deb.jpg' // Path to the background image
+    description: 'Makati lies in the heart of big Metro Manila and is known for its upscale shopping malls home to high fashion brands', 
+    backgroundImage: subBranchMakatiImage
   },
-
 ];
 
 const Home = () => {
@@ -59,6 +60,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-

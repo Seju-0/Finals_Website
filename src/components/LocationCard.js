@@ -1,15 +1,23 @@
+// LocationCard.jsx
 import React from 'react';
-import '../css_files/LocationCard.css'; // Adjusted path
+import '../css_files/LocationCard.css'; // Ensure this path is correct
 
 const LocationCard = ({ location }) => {
   return (
-    <div 
-      className="location-card" 
-      style={{ backgroundImage: `url(${location.backgroundImage})` }} // Set background image
-    >
-      <h4>{location.name}</h4>
-      <p>{location.address}</p>
-      <p>{location.description}</p>
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div 
+          className="flip-card-front" 
+          style={{ backgroundImage: `url(${location.backgroundImage})` }}
+        >
+          <h4>{location.name}</h4>
+          <p>{location.address}</p>
+        </div>
+        <div className="flip-card-back">
+          <h4>Trivia</h4>
+          <p>{location.description}</p>
+        </div>
+      </div>
     </div>
   );
 };
