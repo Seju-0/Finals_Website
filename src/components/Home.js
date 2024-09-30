@@ -12,25 +12,25 @@ const locations = [
   { 
     name: 'Main Store', 
     address: 'Manila', 
-    description: 'Manila, capital and chief city of the Philippines. The city is the centre of the country’s economic, political, social, and cultural activity.', 
+    description: 'Inspired by the city’s dynamic lifestyle, we provide a relaxing space for busy professionals and students to unwind, recharge, and find those extra hours of comfort amidst the hustle.', 
     backgroundImage: mainStoreImage
   },
   { 
     name: 'Sub Branch', 
     address: 'Baguio', 
-    description: 'Baguio City is a landlocked, highly urbanized city located in the island of Luzon and within the highlands of the Cordillera Ranges.', 
+    description: 'Known for its serene landscapes and creative energy, Baguio offers the perfect backdrop for our café, where you can enjoy a warm cup of coffee while escaping the daily grind.', 
     backgroundImage: subBranchBaguioImage
   },
   { 
     name: 'Sub Branch', 
     address: 'Quezon', 
-    description: 'Quezon City is known for its culture, entertainment industry and media, and is aptly called the "City of Stars".', 
+    description: 'Known for its vibrant neighborhoods and thriving community, Quezon City is the perfect place for us to provide a much-needed break in the heart of this bustling city.', 
     backgroundImage: subBranchQuezonImage
   },
   { 
     name: 'Sub Branch', 
     address: 'Makati', 
-    description: 'Makati lies in the heart of big Metro Manila and is known for its upscale shopping malls home to high fashion brands', 
+    description: 'As the heart of business and culture in Metro Manila, Makati is the ideal spot for busy professionals and creatives alike to find a moment of calm.', 
     backgroundImage: subBranchMakatiImage
   },
 ];

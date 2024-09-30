@@ -14,7 +14,6 @@ const LocationCard = ({ location }) => {
           <p>{location.address}</p>
         </div>
         <div className="flip-card-back">
-          <h4>Trivia</h4>
           <p>{location.description}</p>
         </div>
       </div>

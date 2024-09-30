@@ -65,6 +65,7 @@
   max-width: 90%;
   font-size: 1.2rem;
   color: whitesmoke;
+  text-align: justify;
 }
 
 .flip-card-back h4 {
@@ -75,6 +76,7 @@
   max-width: 90%;
   font-size: 1.25rem;
   color: whitesmoke;
+  text-align: justify;
 }
 
 .flip-card-back p {
@@ -85,6 +87,7 @@
   max-width: 90%;
   font-size: 1rem;
   color: whitesmoke;
+  text-align: justify;
 }
 
 /* Optional: Add some hover effects on text */
