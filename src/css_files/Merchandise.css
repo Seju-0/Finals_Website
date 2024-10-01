@@ -1,0 +1,63 @@
+.merchandise-container {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button {
+    background-color: #000000; /* Black button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #333333; /* Darker shade on hover */
+  }
+  
+  .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    margin: 0 5px; /* Space between filter buttons */
+  }
+  
+  .merchandise-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .merchandise-item {
+    border: 1px solid #000000; /* Black border */
+    padding: 15px;
+    margin: 10px;
+    width: 200px; /* Fixed width for items */
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .merchandise-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .merchandise-item img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+  }
