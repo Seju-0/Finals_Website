@@ -1,6 +1,6 @@
 // LocationCard.jsx
 import React from 'react';
-import '../css_files/LocationCard.css'; // Ensure this path is correct
+import '../css_files/AboutUs.css'; // Ensure this path is correct
 
 const LocationCard = ({ location }) => {
   return (

@@ -1,5 +1,6 @@
 /* General Styling */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zen+Dots&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
   }
   
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Zen Dots", sans-serif;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -18,7 +19,7 @@
   
   /* Container */
   .title-container {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Zen Dots", sans-serif;
     display: flex;
     flex-direction: column; /* Stack the sections vertically */
     justify-content: space-between; /* Space the sections between top, middle, and bottom */
@@ -27,7 +28,7 @@
     text-align: center; /* Center the text */
   }
   .title-container h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Zen Dots", sans-serif;
     font-size: 2.5rem; /* Adjust font size */
     color: #000000;
     margin-top: 60px; /* Adjust the value as needed */
