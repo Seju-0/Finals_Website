@@ -8,25 +8,25 @@ const locations = [
     name: "Extra Hours Tokyo",
     address: "123 Oni Circuit Street Tokyo",
     description: "In the heart of cyberpunk Tokyo is a sleek, high-tech café where the city’s pulse never stops. Bathed in neon lights and electric hues, it’s a haven for insomniacs, gamers, and tech enthusiasts looking to refuel.",
-    backgroundImage: "/path_to_image_1" // Replace with correct image path
+    backgroundImage: require("../Images/Tokyo.jpg") // Replace with correct image path
   },
   {
-    name: "Extra Hours Tokyo",
+    name: "Extra Hours Kyoto",
     address: "456 Chrome Blossom Street Kyoto",
     description: "A hidden gem nestled in the neon-lit streets of cyberpunk Kyoto, This late-night café blends the charm of traditional Japan with futuristic tech, offering a cozy yet edgy space for night owls and wanderers.",
-    backgroundImage: "/path_to_image_2" // Replace with correct image path
+    backgroundImage: require("../Images/Kyoto.jpg") // Replace with correct image path
   },
   {
     name: "Extra Hours Osaka",
     address: "103 Midnight Spectrum Alley, Osaka",
     description: "Extra Hours in Osaka is a bold fusion of cyberpunk aesthetics and local street culture. Tucked away in a neon-drenched alley, this café offers a gritty yet stylish escape from the bustling city",
-    backgroundImage: "/path_to_image_2" // Replace with correct image path
+    backgroundImage: require("../Images/Osaka.jpg") // Replace with correct image path
   },
   {
     name: "Extra Hours Sapporo",
     address: "241 Shiro Hive Avenue, Sapporo",
     description: "Extra Hours in Sapporo is a futuristic hideaway amidst the city's snow-covered streets. This cyberpunk-inspired café glows with icy neon lights, offering a sleek, modern space for travelers and locals alike.",
-    backgroundImage: "/path_to_image_2" // Replace with correct image path
+    backgroundImage: require("../Images/Sapporo.jpg") // Replace with correct image path
   },
 
 ];
