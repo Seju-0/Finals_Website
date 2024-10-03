@@ -38,7 +38,7 @@
     font-family: "Zen Dots", sans-serif; /* Ensure correct font-family */
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 350px; /* Adjust this value to move the title down */
+    margin-top: 100px; /* Adjust this value to move the title down */
     margin-bottom: 10px; /* Optional: add space below the title */
 }
 
@@ -84,7 +84,7 @@
 /* Store Locations Title */
 .store-locations-title {
     margin-top: 50px; /* Space above the title */
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
     text-align: center;
     font-family: 'Zen Dots', sans-serif;
@@ -154,11 +154,10 @@
     margin: 5px 0;
     padding: 0 10px;
     max-width: 90%;
-    font-size: 1.2rem;
-    text-align: justify;
+    font-size: 1rem;
 }
 
 .flip-card-front h4:hover,
 .flip-card-back p:hover {
-    color: #b50000;
+    color: #b6b6b6;
 }

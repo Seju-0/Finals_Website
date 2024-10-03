@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomNavbar from './Navbar';
 import LocationCard from './LocationCard'; // Import the LocationCard component
 import '../css_files/AboutUs.css'; // Link to your CSS file
 
@@ -34,7 +33,6 @@ const locations = [
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-      <CustomNavbar />
       <div className="overlay"></div>
       <div className="content">
         <h1 className="AboutUs-title">About Us</h1>
