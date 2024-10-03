@@ -4,7 +4,7 @@ import '../css_files/AboutUs.css'; // Ensure this path is correct
 
 const LocationCard = ({ location }) => {
   return (
-    <div className="flip-card">
+    <div className="flip-card neon"> {/* Add the neon class here */}
       <div className="flip-card-inner">
         <div 
           className="flip-card-front" 

@@ -9,7 +9,7 @@
     background-size: cover; /* Ensures the background image always covers the entire container */
     overflow: auto; /* Allows scrolling */
 }
-  
+
 /* Dark overlay effect */
 .overlay {
     position: absolute;
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     padding: 40px 0;
 }
 
@@ -124,6 +124,26 @@
     transform: rotateY(180deg);
 }
 
+/* Neon glow effect */
+.neon {
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+.neon::before {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute;
+    top: -10px; /* Position the glow */
+    left: -10px; /* Position the glow */
+    right: -10px; /* Position the glow */
+    bottom: -10px; /* Position the glow */
+    border-radius: 12px; /* Round corners */
+    background: rgba(255, 255, 255, 0.5); /* Neon color (e.g., pink) */
+    filter: blur(20px); /* Blur effect */
+    z-index: -1; /* Place behind the card */
+    opacity: 0.7; /* Slight transparency */
+}
+
+/* Front and Back of the Flip Card */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -149,6 +169,7 @@
     transform: rotateY(180deg);
 }
 
+/* Card Text Styling */
 .flip-card-front h4, .flip-card-front p,
 .flip-card-back p {
     margin: 5px 0;
@@ -160,4 +181,9 @@
 .flip-card-front h4:hover,
 .flip-card-back p:hover {
     color: #b6b6b6;
+}
+
+/* Ensure the flip-card has neon effect */
+.flip-card:hover .neon::before {
+    opacity: 1; /* Make the neon glow fully visible on hover */
 }
