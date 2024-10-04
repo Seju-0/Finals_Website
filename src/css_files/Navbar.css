@@ -1,0 +1,25 @@
+/* Navbar.css */
+a {
+  text-decoration: none;
+}
+.navbar {
+  width: 100%; /* Ensure navbar takes full width */
+  padding: 1rem 0; /* Add vertical padding to increase height */
+  text-align: center;
+  margin-top: 20px; /* Adjust this value to lower the navbar */
+}
+
+.navbar .nav {
+  flex: 1; /* Allow the nav to take full width */
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  margin: 0 30px; /* Increase horizontal margin */
+  font-weight: bold; /* Make text bold */
+}
+
+.nav-link:hover {
+  color: gray; /* Highlight color on hover */
+}

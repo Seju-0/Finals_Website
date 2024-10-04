@@ -1,13 +1,32 @@
 import React from 'react';
-import './App.css';  // Optional global styles
+import './css_files/App.css';  // Global styles
+import './css_files/styles.css';  // Additional styles
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CustomNavbar from './components/Navbar'; 
+import Home from './components/Home';
+import Register from './components/Register';
+import Beverages from './components/Beverages';
+import Pastries from './components/Pastries';
+import Merchandise from './components/Merchandise';
 import Login from './Login';  // Import your Login component
 
 function App() {
   return (
-    <div className="App">
-      <Login />
-    </div>
+    <Router>
+      <CustomNavbar />
+      <div className="centered-container"> {/* Add this class */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/beverages" element={<Beverages />} />
+          <Route path="/pastries" element={<Pastries />} />
+          <Route path="/merchandise" element={<Merchandise />} />
+          <Route path="/login" element={<Login />} /> {/* Add the Login route */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
