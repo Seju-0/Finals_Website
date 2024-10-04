@@ -1,6 +1,5 @@
 import React from 'react';
 import './Login.css'; // Import the CSS file for styling
-import { FaGoogle, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa"; // Social icons
 import { GiCoffeeBeans } from "react-icons/gi"; // Coffee Beans icon
 
 const Login = () => {
@@ -9,27 +8,20 @@ const Login = () => {
       <div className="login-box">
         {/* Sign In Section */}
         <div className="sign-in-section">
-          <h2>Sign In</h2>
-          <div className="social-container">
-            <button className="social-btn"><FaGoogle /></button>
-            <button className="social-btn"><FaFacebook /></button>
-            <button className="social-btn"><FaLinkedin /></button>
-            <button className="social-btn"><FaGithub /></button>
-          </div>
-          <p>or use your email password</p>
+          <h2 data-text="Sign-in">Sign-in</h2>
           <form>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
             <a href="#" className="forgot-password">Forgot Your Password?</a>
-            <button className="sign-in-btn">Sign In</button>
+            <button type="submit" className="sign-in-btn">Sign In</button>
           </form>
         </div>
 
         {/* Sign Up Section */}
         <div className="sign-up-section">
-          <GiCoffeeBeans size={50} style={{ marginBottom: '10px' }} /> {/* Coffee Beans icon */}
-          <h2>Hello, Friend!</h2>
-          <p>Register with your personal details to use all of site features</p>
+          <GiCoffeeBeans size={50} style={{ marginBottom: '10px' }} />
+          <h1 data-text="Hello Friend!">Hello Friend!</h1>
+          <p>Register Now to get exclusive deals and discounts!!</p>
           <button className="sign-up-btn">Sign Up</button>
         </div>
       </div>
