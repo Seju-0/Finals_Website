@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import './css_files/App.css';  // Global styles
+import './css_files/App.css'; // Global styles
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import CustomNavbar from './components/Navbar'; 
+import CustomNavbar from './components/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Register from './components/Register';
 import Beverages from './components/Beverages';
 import Pastries from './components/Pastries';
 import Merchandise from './components/Merchandise';
+import ItemDetail from './components/ProductDetail';
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/beverages" element={<Beverages />} />
           <Route path="/pastries" element={<Pastries />} />
           <Route path="/merchandise" element={<Merchandise />} />
+          <Route path="/item/:id" element={<ItemDetail />} /> {/* Route for item detail */}
         </Routes>
       </div>
     </div>
@@ -44,3 +46,5 @@ const WrappedApp = () => (
 );
 
 export default WrappedApp;
+
+

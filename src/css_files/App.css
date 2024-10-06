@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://cdnb.artstation.com/p/assets/images/images/029/948/465/large/kunyan-lu-56601.jpg?1599125519') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background covers the whole page */
+    color: white; /* Default text color */
+  }
+  
+  .app {
+    min-height: 100vh; /* Ensure app takes full height */
+  }
+  
