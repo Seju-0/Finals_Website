@@ -1,0 +1,157 @@
+.product-detail-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background: url('https://cdnb.artstation.com/p/assets/images/images/029/948/465/large/kunyan-lu-56601.jpg?1599125519') no-repeat center center/cover; /* Background image */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    color: white; /* Text color */
+    display: flex; /* Allows for side-by-side layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Content wrapper */
+.product-detail {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between image and details */
+    width: 80%; /* Responsive width */
+    max-width: 1200px; /* Max width for large screens */
+    z-index: 1; /* Layer above overlay */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7); /* Add a line separator */
+    padding-bottom: 1rem; /* Space below the content */
+}
+
+/* Image styling */
+.product-image {
+    max-width: 40%; /* Maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Product info styling */
+.product-info {
+    max-width: 50%; /* Limit width of product info */
+    margin-left: 2rem; /* Space between image and info */
+}
+
+/* General spacing for headings and paragraphs */
+h2, h3 {
+    margin: 1.5rem 0; /* Increase vertical spacing */
+    letter-spacing: 1px; /* Slight letter spacing */
+}
+
+.description, .reviews {
+    margin-top: 2rem;
+}
+
+/* Button styling */
+.enter-button {
+    padding: 1rem 2rem; /* Increase padding for larger buttons */
+    margin: 1rem 0; /* Space between buttons */
+    margin-right: 1rem; /* Add space to the right of the Add to Cart button */
+    border: none;
+    background-color: #ff0000; /* Red background */
+    color: white;
+    font-size: 1.2rem; /* Slightly larger text */
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Remove margin-right from the last button to avoid extra space */
+.enter-button:last-child {
+    margin-right: 0; 
+}
+
+/* Button hover effect */
+.enter-button:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+}
+
+/* Overlay for dark effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0; /* Layer under content */
+}
+
+/* Input styling for quantity */
+.quantity-input {
+    width: 60px; /* Set width of the input */
+    padding: 0.5rem; /* Add padding for better touch targets */
+    margin: 0.5rem 0; /* Space above and below the input */
+    font-size: 1rem; /* Font size */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color for input */
+    color: black; /* Text color for input */
+}
+
+/* Image gallery styling */
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.main-image {
+    width: 100%; /* Full width for the main image */
+    max-width: 600px; /* Set a max width for the main image */
+    margin-bottom: 1rem; /* Space below the main image */
+    position: relative; /* Required for absolute positioning of the magnifying glass */
+}
+
+.product-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the main image */
+    max-width: 600px; /* Limit the max width */
+}
+
+.thumbnail-container {
+    display: flex; /* Align thumbnails in a row */
+    gap: 10px; /* Space between thumbnails */
+}
+
+.thumbnail {
+    width: 80px; /* Set width for thumbnails */
+    height: 80px; /* Set height for thumbnails */
+    border-radius: 4px; /* Rounded corners for thumbnails */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Transition effect on hover */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Scale up thumbnail on hover */
+}
+
+/* Magnifying glass effect */
+.magnifying-glass {
+    position: absolute;
+    width: 200px; /* Adjust width as necessary */
+    height: 200px; /* Adjust height as necessary */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Border for the magnifying glass */
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden; /* Prevent overflow */
+    pointer-events: none; /* Disable mouse events */
+    transform: translate(-50%, -50%); /* Center the magnifying glass */
+    display: none; /* Initially hide the magnifying glass */
+}
+
+.zoomed-image {
+    width: 400px; /* Adjust width for the zoomed image */
+    height: auto; /* Maintain aspect ratio */
+    transform: scale(2); /* Adjust scale as necessary */
+    pointer-events: none; /* Disable mouse events for the zoomed image */
+}
+
+/* Show the magnifying glass when hovering */
+.main-image:hover .magnifying-glass {
+    display: flex; /* Show the magnifying glass on hover */
+    align-items: center;
+    justify-content: center;
+}
