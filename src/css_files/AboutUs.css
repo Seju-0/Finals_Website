@@ -3,11 +3,12 @@
 /* Full-screen container */
 .about-us-container {
     position: relative;
-    width: 100vw; /* Full viewport width */
-    min-height: 100vh; /* Ensure it's at least full viewport height */
+    width: 100vw; 
+    min-height: 100vh; 
+    padding-top: 5%;
     background: url('https://cdna.artstation.com/p/assets/images/images/049/904/706/large/jose-vega-final-painting.jpg?1653583370') no-repeat center center/cover;
-    background-size: cover; /* Ensures the background image always covers the entire container */
-    overflow: auto; /* Allows scrolling */
+    background-size: cover; 
+    overflow: auto; 
 }
 
 /* Dark overlay effect */
@@ -17,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.6); 
     z-index: 1;
 }
 
@@ -25,66 +26,66 @@
 .content {
     position: relative;
     z-index: 2;
-    padding: 30px; /* Add padding for better readability */
-    max-width: 1600px; /* Adjust this value as needed */
-    margin: 0 auto; /* Center the content */
+    padding: 15px; /* Reduced padding */
+    max-width: 1200px; /* Adjusted max-width */
+    margin: 0 auto; 
     color: white;
     text-align: center;
 }
 
 /* Main title styling */
 .AboutUs-title {
-    font-size: 4rem; /* Adjust the size if needed */
-    font-family: "Zen Dots", sans-serif; /* Ensure correct font-family */
+    font-size: 2.5rem; /* Reduced font size */
+    font-family: "Zen Dots", sans-serif; 
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 100px; /* Adjust this value to move the title down */
-    margin-bottom: 10px; /* Optional: add space below the title */
+    margin-top: 50px; /* Reduced margin */
+    margin-bottom: 10px; 
 }
 
 /* Cards Container */
 .cards-container {
     display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap to the next line */
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 20px; /* Space between cards */
-    margin-top: 40px; /* Space above the cards section */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; /* Reduced gap */
+    margin-top: 20px; /* Reduced margin */
 }
 
 /* Individual Card Styling */
 .card {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Inner spacing */
-    width: 300px; /* Adjust this value to make the cards larger */
-    text-align: center; /* Center text inside the cards */
-    color: white; /* Text color */
-    transition: transform 0.2s; /* Smooth transition for hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px; /* Reduced radius */
+    padding: 15px; /* Reduced inner spacing */
+    width: 250px; /* Adjusted width */
+    text-align: center; 
+    color: white; 
+    transition: transform 0.2s; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    transform: scale(1.03); /* Adjusted hover scale */
 }
 
 /* Card Title Styling */
 .card h2 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5rem; /* Keep the title size larger for visibility */
-    color: #ffffff; /* Title color */
+    margin: 0; 
+    font-size: 1.2rem; /* Reduced title size */
+    color: #ffffff; 
 }
 
 /* Card Paragraph Styling */
 .card p {
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem; /* Keep paragraph size readable */
-    margin: 10px 0 0; /* Space above */
+    font-size: 0.9rem; /* Reduced paragraph size */
+    margin: 5px 0 0; 
 }
 
 /* Store Locations Title */
 .store-locations-title {
-    margin-top: 50px; /* Space above the title */
-    font-size: 3.5rem;
+    margin-top: 30px; /* Reduced margin */
+    font-size: 2.5rem; /* Reduced title size */
     color: white;
     text-align: center;
     font-family: 'Zen Dots', sans-serif;
@@ -96,16 +97,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 40px 0;
+    gap: 10px; /* Reduced gap */
+    padding: 20px 0; /* Reduced padding */
 }
 
 /* Location card styling */
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px; /* For the 3D effect */
+    width: 250px; /* Adjusted width */
+    height: 350px; /* Adjusted height */
+    perspective: 1000px; 
     margin: 16px;
 }
 
@@ -116,8 +117,8 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+    border-radius: 6px; /* Reduced radius */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -126,21 +127,21 @@
 
 /* Neon glow effect */
 .neon {
-    position: relative; /* Position relative for the pseudo-element */
+    position: relative; 
 }
 
 .neon::before {
-    content: ""; /* Required for the pseudo-element */
+    content: ""; 
     position: absolute;
-    top: -10px; /* Position the glow */
-    left: -10px; /* Position the glow */
-    right: -10px; /* Position the glow */
-    bottom: -10px; /* Position the glow */
-    border-radius: 12px; /* Round corners */
-    background: rgba(255, 255, 255, 0.5); /* Neon color (e.g., pink) */
-    filter: blur(20px); /* Blur effect */
-    z-index: -1; /* Place behind the card */
-    opacity: 0.7; /* Slight transparency */
+    top: -8px; /* Reduced positioning */
+    left: -8px; 
+    right: -8px; 
+    bottom: -8px; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.5); 
+    filter: blur(15px); /* Reduced blur */
+    z-index: -1; 
+    opacity: 0.7; 
 }
 
 /* Front and Back of the Flip Card */
@@ -149,13 +150,13 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 8px;
+    border-radius: 6px; /* Reduced radius */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     box-sizing: border-box;
 }
 
@@ -173,9 +174,9 @@
 .flip-card-front h4, .flip-card-front p,
 .flip-card-back p {
     margin: 5px 0;
-    padding: 0 10px;
+    padding: 0 5px; /* Reduced padding */
     max-width: 90%;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced font size */
 }
 
 .flip-card-front h4:hover,
@@ -185,5 +186,48 @@
 
 /* Ensure the flip-card has neon effect */
 .flip-card:hover .neon::before {
-    opacity: 1; /* Make the neon glow fully visible on hover */
+    opacity: 1; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .about-us-container {
+        min-height: 100vh;
+    }
+
+    .AboutUs-title {
+        font-size: 2rem; /* Reduced for smaller screens */
+        margin-top: 40px; /* Reduced margin */
+    }
+
+    .cards-container {
+        flex-direction: column; 
+    }
+
+    .card {
+        width: 90%; /* Make cards responsive */
+    }
+
+    .flip-card {
+        width: 90%;
+        height: 250px; /* Adjusted size */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .AboutUs-title {
+        font-size: 1.5rem; /* Further reduced */
+        margin-top: 20px;
+    }
+
+    .card, .flip-card {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .flip-card {
+        height: 200px; /* Adjusted height */
+    }
 }

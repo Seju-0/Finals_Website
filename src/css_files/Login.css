@@ -130,15 +130,9 @@ body {
     text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
       0.025em 0.05em 0 #50c878;
   }
-  
-  body {
-    font-family: "Zen Dots", sans-serif;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  14% {
+    text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
+      0.025em 0.05em 0 #50c878;
   }
   15% {
     color: #50c878;
