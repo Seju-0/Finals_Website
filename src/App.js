@@ -1,32 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css_files/App.css';  // Global styles
-import './css_files/styles.css';  // Additional styles
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import CustomNavbar from './components/Navbar'; 
 import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 import Register from './components/Register';
 import Beverages from './components/Beverages';
 import Pastries from './components/Pastries';
 import Merchandise from './components/Merchandise';
-import Login from './Login';  // Import your Login component
 
-function App() {
+const App = () => {
+  const location = useLocation();
+  const [glitch, setGlitch] = useState(false);
+
+  const handleEnterCafeClick = () => {
+    setGlitch(true);
+    setTimeout(() => {
+      setGlitch(false);
+    }, 500); // Ensure this matches the animation duration
+  };
+
   return (
-    <Router>
+    <div className={`app ${glitch ? 'glitch' : ''}`}>
       <CustomNavbar />
-      <div className="centered-container"> {/* Add this class */}
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <div className="centered-container">
+        <Routes location={location}>
+          <Route path="/" element={<Home onEnterCafeClick={handleEnterCafeClick} />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/beverages" element={<Beverages />} />
           <Route path="/pastries" element={<Pastries />} />
           <Route path="/merchandise" element={<Merchandise />} />
-          <Route path="/login" element={<Login />} /> {/* Add the Login route */}
         </Routes>
       </div>
-    </Router>
+    </div>
   );
-}
+};
 
-export default App;
+const WrappedApp = () => (
+  <Router>
+    <App />
+  </Router>
+);
 
+export default WrappedApp;

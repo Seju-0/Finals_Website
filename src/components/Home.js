@@ -1,64 +1,36 @@
-import React from 'react';
-import '../css_files/Home.css'; // Adjusted path
-import LocationCard from './LocationCard'; // Corrected import
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../css_files/Home.css'; // Link to your CSS file
 
-const locations = [
+const Home = ({ onEnterCafeClick }) => {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = "EXTRA HOURS";
 
-  { 
-    name: 'Main Store', 
-    address: 'Manila', 
-    description: '8123-4567', 
-    backgroundImage: 'https://i.pinimg.com/564x/ce/21/b4/ce21b432b241659ab1febe4902bee382.jpg' // Path to the background image
-  },
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setDisplayedText(fullText.slice(0, index + 1)); // Update text to display
+      index += 1;
+      if (index === fullText.length) {
+        clearInterval(intervalId); // Clear interval when done
+      }
+    }, 200); // Adjust typing speed here
 
-  { 
-    name: 'Main Store', 
-    address: 'Baguio', 
-    description: '+63 (0)74', 
-    backgroundImage: 'https://i.pinimg.com/564x/4d/9a/fd/4d9afd1ad833ed52e7fbe83b5fe51a11.jpg' // Path to the background image
-  },
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, [fullText]);
 
-  { 
-    name: 'Main Store', 
-    address: 'Quezon', 
-    description: '+63 (0)42', 
-    backgroundImage: 'https://i.pinimg.com/564x/e7/20/cc/e720cca11bc8c8d526b96cb43a46dffe.jpg' // Path to the background image
-  },
-
-  { 
-    name: 'Main Store', 
-    address: 'Makati', 
-    description: '+63 (0)02', 
-    backgroundImage: 'https://i.pinimg.com/564x/8c/90/d3/8c90d39f68265d441f594b7200248deb.jpg' // Path to the background image
-  },
-
-];
-
-const Home = () => {
   return (
     <div className="home-container">
-      <h2>Extra Hours</h2>
-      
-      <div className="about-us">
-        <h3>About Us</h3>
-        <p>
-          {/* About us content */}
-        </p>
-      </div>
-
-      <div className="locations">
-        <h3>Store Locations</h3>
-        <div className="locations-container">
-          {locations.map((location, index) => (
-            <LocationCard key={index} location={location} />
-          ))}
-        </div>
+      <div className="overlay"></div>
+      <div className="content">
+        <h1 className="main-title">{displayedText}</h1>
+        <h2 className="sub-title">A CYBERPUNK THEMED CAFE BASED IN THE HEART OF JAPAN</h2>
+        <Link to="/about-us" onClick={onEnterCafeClick}> {/* Trigger glitch effect on click */}
+          <button className="enter-button">ENTER CAFE</button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Home;
-
-
-
