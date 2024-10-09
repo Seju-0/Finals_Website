@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css'; // Import the CSS file for styling
+import '../css_files/Login.css'; // Import the CSS file for styling
 import { GiCoffeeBeans } from "react-icons/gi"; // Coffee Beans icon
 
 const Login = () => {
@@ -21,7 +21,7 @@ const Login = () => {
         <div className="sign-up-section">
           <GiCoffeeBeans size={50} style={{ marginBottom: '10px' }} />
           <h1 data-text="Hello Friend!">Hello Friend!</h1>
-          <p>Register Now to get exclusive deals and discounts!!</p>
+          <p>Register Now to get exclusive deals and discounts!</p>
           <button className="sign-up-btn">Sign Up</button>
         </div>
       </div>

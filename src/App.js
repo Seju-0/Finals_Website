@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import CustomNavbar from './components/Navbar'; 
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
-import Register from './components/Register';
+import Login from './components/Login';
 import Beverages from './components/Beverages';
 import Pastries from './components/Pastries';
 import Merchandise from './components/Merchandise';
@@ -17,7 +17,7 @@ const App = () => {
     setGlitch(true);
     setTimeout(() => {
       setGlitch(false);
-    }, 500); // Ensure this matches the animation duration
+    }, 500); 
   };
 
   return (
@@ -26,7 +26,7 @@ const App = () => {
       <div className="centered-container">
         <Routes location={location}>
           <Route path="/" element={<Home onEnterCafeClick={handleEnterCafeClick} />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/beverages" element={<Beverages />} />
           <Route path="/pastries" element={<Pastries />} />

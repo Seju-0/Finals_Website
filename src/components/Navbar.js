@@ -14,7 +14,7 @@ const CustomNavbar = () => {
           <Nav.Link as={Link} to="/merchandise">Merchandise</Nav.Link>
         </Nav>
         <Nav className="nav-right"> {/* Right-aligned link */}
-          <Nav.Link as={Link} to="/register">Register</Nav.Link>
+          <Nav.Link as={Link} to="/login">Register</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
